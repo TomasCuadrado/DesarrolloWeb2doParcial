@@ -24,15 +24,22 @@
     <title>2do Parcial - Cuadrado Tomás</title>
   </head>
   <body>
-    <nav class="navbar bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light">Calculadora de Ingresos</a>
-        </div>
+    <nav class="navbar bg-dark mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fs-2">Calculadora de Ingresos</a>
+      </div>
     </nav>
-    <main class="center d-flex flex-column m-3">
-      <section class="container-fluid">
+
+    <main class="container">
+      <section
+        id="calculadora"
+        class="container d-flex flex-column justify-content-center"
+      >
         <h1>Averigua tus aportes</h1>
-        <form id="Brutos">
+        <form
+          id="Brutos"
+          class="border shadow rounded-1 container-fluid p-4 mb-3"
+        >
           <div class="mb-3">
             <label for="nombre" class="form-label">Ingresá tu nombre</label>
             <input
@@ -60,22 +67,34 @@
           <button id="btn-brutos" type="button" class="btn btn-primary">
             Calcular
           </button>
-          <input id="btn-limpiar-campos" type="reset" value="Limpiar" class="btn btn-danger limpiar"/>
+          <input
+            id="btn-limpiar-campos"
+            type="reset"
+            value="Limpiar"
+            class="btn btn-danger limpiar"
+          />
         </form>
       </section>
-      <section>
-        <div class="container-fluid d-flex flex-column border border-2 rounded-1 mt-3">
-          <h2 id="result-titulo" class="center">Tus resultados</h2>
+
+      <section
+        id="sec-resultados"
+        class="container"
+      >
+        <div class="border d-flex flex-column rounded-1 mb-3 p-3 shadow justify-content-center">
+          <h2 id="result-titulo" class="center fw-bold fs-3 ">Resultados</h2>
           <h3 id="result-nombre"></h3>
-          <h3 id="result-brutos"></h3>
-          <h4 id="result-neto"></h4>
-          <h4 id="result-jubil"></h4>
-          <h4 id="result-social"></h4>
-          <h4 id="result-pami"></h4>
+
+          <h3 id="result-brutos" class="fs-4 mt-3 linea-hover"></h3>
+          <h4 id="result-jubil" class="fs-4 linea-hover"></h4>
+          <h4 id="result-social" class="fs-4 linea-hover"></h4>
+          <h4 id="result-pami" class="fs-4 linea-hover"></h4>
+          <h4 id="result-neto" class="fs-3 linea-hover"></h4>
         </div>
       </section>
-      <section></section>
     </main>
+    
+    <footer id="footer" class="navbar bg-dark mt-3 d-flex justify-content-end"><p class="text-secondary m-2 me-4 ">Desarrollado por Tomás Cuadrado</p></footer>
+
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
