@@ -17,7 +17,6 @@ $(document).ready(function () {
         brutos = $("#brutos").val();
         brutos = parseFloat(brutos).toFixed(2);
         nombre = $("#nombre").val();
-        //nombre = nombre.charAt(0).toUpperCase() + nombre.slice(1);
 
         //calculo de los porcentajes
         calcJubilacion = brutos * jubilatorios / 100;
@@ -31,9 +30,6 @@ $(document).ready(function () {
         calcJubilacion = calcJubilacion.toFixed(2);
         calcObraSocial = calcObraSocial.toFixed(2);
         calcPami = calcPami.toFixed(2);
-
-
-
 
         //imprimo por pantalla los resultados
         $("#result-titulo").show();
@@ -60,8 +56,6 @@ $(document).ready(function () {
 
         $("#result-neto").empty();
         $("#result-neto").append(`<span class="texto">Sueldo neto: </span><span class="color-plata fw-bold valor">${'$' + sueldoNeto}</span>`);
-
-
 
     });
 });
