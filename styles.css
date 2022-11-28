@@ -9,15 +9,32 @@ body {
     height: 100vh;
 } 
 
+.nav-titulo {
+    color: #afd6f0!important;
+}
+
+.fondo-1 {
+    background-color: #212024;
+}
+
+.fondo-2{
+    background-color: #cfcfcf;
+}
+
 .color-plata {
-    color: green;
+    color: rgb(3, 150, 3);
 }
 
 .ocultar {
     display: none;
 }
+
 .mostrar {
     display: initial;
+}
+
+.icono {
+    max-width: 30px;
 }
 
 #footer {
@@ -27,11 +44,42 @@ body {
     height: 60px; 
 }
 
+#Brutos>div>input{
+    border: none;
+}
+#Brutos>div>input:focus{
+    border: none;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-repeat: no-repeat;
+}
+
+.form-control::placeholder {
+    color: #3d3d3d;
+    opacity: 1;
+}
+
+.logo{
+    width: 3rem;
+    filter: invert(90%) sepia(10%) saturate(2575%) hue-rotate(202deg) brightness(94%) contrast(95%);
+}
+
 .nombre {
     text-transform: capitalize;
 }
 
+.limpiar {
 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 @media (min-width: 991px){
     html {
@@ -39,7 +87,7 @@ body {
         padding: 0;
     }
     .color-plata {
-        color: green;
+        color: rgb(3, 150, 3);
     }
 
     #calculadora, #sec-resultados {
@@ -53,15 +101,13 @@ body {
         height: 60px; 
     }
 
-    .linea-hover{
-        
-        
+    #Brutos, #resultados{
+        padding: 2rem 2.5rem!important;
+        margin-bottom: 2rem!important;
     }
 
-    .linea-hover:hover {
-        background-color: rgb(185, 212, 185);
-        padding: 0.3rem;
-        border-radius: 5px;
+    #nombre, #brutos{
+        margin-bottom: .4rem;
     }
 
 }

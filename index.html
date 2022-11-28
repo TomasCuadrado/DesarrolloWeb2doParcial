@@ -24,9 +24,12 @@
     <title>2do Parcial - Cuadrado Tomás</title>
   </head>
   <body>
-    <nav class="navbar bg-dark mb-3">
+    <nav class="navbar fondo-1 mb-3">
       <div class="container-fluid">
-        <a class="navbar-brand text-light fs-2">Calculadora de Ingresos</a>
+        <a class="nav-titulo navbar-brand text-light fs-2" href="#"
+          ><img class="logo" src="img/piggy-bank.png" alt="piggy_img">
+          Calculadora de Ingresos</a
+        >
       </div>
     </nav>
 
@@ -35,16 +38,18 @@
         id="calculadora"
         class="container d-flex flex-column justify-content-center"
       >
-        <h1>Averigua tus aportes</h1>
+        <h1 class="fs-1">Descubrí tus aportes</h1>
         <form
           id="Brutos"
-          class="border shadow rounded-1 container-fluid p-4 mb-3"
+          class="shadow rounded-1 container-fluid p-4 mb-3 fondo-1"
         >
           <div class="mb-3">
-            <label for="nombre" class="form-label">Ingresá tu nombre</label>
+            <label for="nombre" class="form-label text-light"
+              >Ingresá tu nombre</label
+            >
             <input
               type="text"
-              class="form-control d-inline-flex"
+              class="form-control d-inline-flex fondo-2"
               id="nombre"
               aria-describedby=""
               placeholder="Nombre y apellido"
@@ -52,36 +57,34 @@
             <div id="" class="form-text"></div>
           </div>
           <div class="mb-3">
-            <label for="brutos" class="form-label"
+            <label for="brutos" class="form-label text-light"
               >Ingresá tus ingresos brutos</label
             >
             <input
               type="number"
-              class="form-control d-inline-flex"
+              class="form-control d-inline-flex fondo-2"
               id="brutos"
               placeholder="$"
               required
             />
           </div>
 
-          <button id="btn-brutos" type="button" class="btn btn-primary">
+          <button id="btn-brutos" type="button" class="btn btn-success me-2">
+            <img class="icono" src="img/calculator.png" alt="img_calculadora" />
             Calcular
           </button>
-          <input
-            id="btn-limpiar-campos"
-            type="reset"
-            value="Limpiar"
-            class="btn btn-danger limpiar"
-          />
+          <button id="btn-limpiar-campos" class="btn btn-danger" type="reset">
+            <img class="icono" src="img/broom.png" alt="img_broom">
+            Limpiar</button>
+          </div>
         </form>
       </section>
 
-      <section
-        id="sec-resultados"
-        class="container"
-      >
-        <div class="border d-flex flex-column rounded-1 mb-3 p-3 shadow justify-content-center">
-          <h2 id="result-titulo" class="center fw-bold fs-3 ">Resultados</h2>
+      <section id="sec-resultados" class="container text-light">
+        <div id="resultados"
+          class="fondo-1 d-flex flex-column rounded-1 mb-3 p-3 shadow justify-content-center"
+        >
+          <h2 id="result-titulo" class="center fw-bold fs-3">Resultados</h2>
           <h3 id="result-nombre"></h3>
 
           <h3 id="result-brutos" class="fs-4 mt-3 linea-hover"></h3>
@@ -92,8 +95,12 @@
         </div>
       </section>
     </main>
-    
-    <footer id="footer" class="navbar bg-dark mt-3 d-flex justify-content-end"><p class="text-secondary m-2 me-4 ">Desarrollado por Tomás Cuadrado</p></footer>
+
+    <footer id="footer" class="navbar fondo-1 mt-3 d-flex justify-content-end">
+      <p class="text-secondary m-2 me-4">
+        Desarrollado por <span class="fst-italic">Tomás Cuadrado</span>
+      </p>
+    </footer>
 
     <script type="text/javascript" src="scripts.js"></script>
   </body>

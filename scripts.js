@@ -44,7 +44,7 @@ $(document).ready(function () {
         if(nombre==''){
             $("#result-nombre").append(`Estos son tus ingresos...`);
         }else{
-            $("#result-nombre").append(`<span class="nombre">${nombre}</span>, estos son tus ingresos...`);
+            $("#result-nombre").append(`<span class="nombre fst-italic">${nombre}</span>, estos son tus ingresos...`);
         }
 
         $("#result-brutos").empty();
